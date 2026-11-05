@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#f5eee5">
+<title>Our Little Universe ♡</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&family=Space+Grotesk:wght@400;500;600&display=swap');
+:root{--paper:#f5eee5;--ink:#382622;--muted:#8b7168;--red:#a63d43;--rose:#d99b98;--pink:#ead0c8;--line:#d9c6b9;--wine:#682d37;--card:#fbf7f1}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:'Space Grotesk',sans-serif;background-image:radial-gradient(#a7796c22 .7px,transparent .7px);background-size:7px 7px}button,input{font:inherit}button{cursor:pointer}.wrap{max-width:1120px;margin:auto;padding:22px}.top{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding:9px 0 15px;font:11px 'DM Mono',monospace;letter-spacing:.12em;color:var(--muted)}.hero{padding:60px 12px 34px;text-align:center;position:relative}.eyebrow{font:11px 'DM Mono';letter-spacing:.2em;color:var(--red)}h1{font:600 clamp(44px,8vw,82px)/1 'Playfair Display',serif;letter-spacing:-.045em;margin:16px 0 12px}h1 em{color:var(--red);font-weight:500}.sub{font:italic 17px 'Playfair Display';color:var(--muted)}.stamp{position:absolute;right:8%;top:35px;border:1px solid var(--red);border-radius:50%;width:76px;height:76px;display:grid;place-items:center;color:var(--red);font:10px 'DM Mono';transform:rotate(12deg)}.hero-art{max-width:760px;margin:34px auto 28px;display:grid;grid-template-columns:1fr 1.3fr 1fr;gap:12px;align-items:center}.polaroid{background:#fffaf3;padding:10px 10px 30px;box-shadow:0 8px 20px #55382b1c;transform:rotate(-5deg)}.polaroid:nth-child(2){transform:rotate(2deg)}.polaroid:nth-child(3){transform:rotate(5deg)}.ph{height:150px;background:linear-gradient(135deg,#d9b7a9,#a75f61 55%,#e8cfc2);display:grid;place-items:center;color:#fff8;font:30px 'Playfair Display';position:relative;overflow:hidden}.polaroid:nth-child(2) .ph{height:190px;background:linear-gradient(135deg,#e4c9b6,#9d5d59 55%,#693b42)}.ph:after{content:'ADD YOUR PHOTO';position:absolute;bottom:10px;font:9px 'DM Mono';letter-spacing:.12em;color:#fff}.polaroid small{display:block;text-align:center;margin-top:9px;font:italic 13px 'Playfair Display';color:#75534a}.nav{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:25px auto 48px;max-width:850px}.nav a,.pill{border:1px solid var(--line);background:#fbf7f1;color:var(--ink);padding:10px 14px;border-radius:3px;font:11px 'DM Mono';letter-spacing:.03em;transition:.2s}.nav a:hover,.nav a.active,.pill:hover{background:var(--wine);color:#fff;border-color:var(--wine)}main{max-width:900px;margin:auto}.section{display:none;animation:fade .35s ease}.section.active{display:block}@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}.section-head{text-align:center;margin-bottom:25px}.kicker{font:10px 'DM Mono';letter-spacing:.18em;color:var(--red)}h2{font:500 clamp(32px,5vw,48px) 'Playfair Display';margin:8px 0}.intro{color:var(--muted);font:italic 15px 'Playfair Display'}.panel{background:var(--card);border:1px solid var(--line);padding:24px;box-shadow:0 9px 25px #51392a0b;margin-bottom:18px}.music-layout{display:grid;grid-template-columns:220px 1fr;gap:25px;align-items:center}.record{width:205px;aspect-ratio:1;border-radius:50%;background:repeating-radial-gradient(circle,#211b1b 0 2px,#393030 3px 4px);display:grid;place-items:center;box-shadow:0 8px 22px #0003;margin:auto;animation:spin 12s linear infinite paused}.record.playing{animation-play-state:running}.record .label{width:72px;height:72px;border-radius:50%;background:var(--rose);display:grid;place-items:center;color:#fff;font:italic 19px 'Playfair Display'}.track{border-bottom:1px solid var(--line);padding:12px 0;display:flex;justify-content:space-between;gap:10px}.track small{color:var(--muted);font:10px 'DM Mono'}.action{background:var(--wine);color:#fff;border:0;padding:11px 16px;font:11px 'DM Mono';margin-top:12px}.action.secondary{background:transparent;color:var(--wine);border:1px solid var(--wine)}@keyframes spin{to{transform:rotate(360deg)}}.timeline{border-left:1px solid var(--rose);margin:25px 0 10px 18px;padding-left:25px}.moment{position:relative;margin:0 0 24px}.moment:before{content:'♡';position:absolute;left:-34px;top:0;color:var(--red);background:var(--card)}.moment time{font:10px 'DM Mono';color:var(--red)}.moment h3{font:italic 22px 'Playfair Display';margin:5px 0}.moment p{color:var(--muted);font-size:13px}.placeholder-photo{height:110px;background:linear-gradient(120deg,#e6c9bd,#b97975,#e9d9c9);display:grid;place-items:center;color:#fff;font:10px 'DM Mono';letter-spacing:.12em;margin-top:10px}.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.gallery .ph{height:160px}.gallery .ph:nth-child(2n){background:linear-gradient(135deg,#d9c2b4,#8e4b51)}.gallery .ph:nth-child(3n){background:linear-gradient(135deg,#b98c7b,#e6cbbd)}.todo-add{display:flex;gap:8px;margin:15px 0}.todo-add input{min-width:0;flex:1;padding:12px;border:1px solid var(--line);background:#fffaf5;color:var(--ink)}.todo{display:flex;align-items:center;gap:10px;padding:12px 0;border-bottom:1px dashed var(--line);font-size:14px}.todo input{accent-color:var(--red);width:17px;height:17px}.todo.done span{text-decoration:line-through;color:#a28d84}.letter{max-width:620px;margin:auto;background:#fffaf4;border:1px solid var(--line);padding:34px;box-shadow:0 8px 25px #51392a10;position:relative}.letter:before{content:'♡';position:absolute;right:20px;top:12px;color:var(--rose);font-size:26px}.letter p{font:italic 17px/1.8 'Playfair Display'}.bouquet{font-size:50px;text-align:center;letter-spacing:7px;margin:15px}.reason-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.reason{min-height:115px;background:#f0ded7;border:1px solid #dfc3b8;color:var(--wine);font:italic 17px 'Playfair Display';padding:18px 12px;text-align:center;display:grid;place-items:center}.reason.reveal{background:#fffaf4}.gamebox{text-align:center;padding:25px}.game-score{font:11px 'DM Mono';color:var(--muted)}.arena{height:250px;background:linear-gradient(145deg,#f0dcd4,#ead0c8);border:1px dashed #c58d87;position:relative;overflow:hidden;margin:15px 0}.heart{position:absolute;border:0;background:transparent;font-size:30px;animation:pop .2s}.heart:active{transform:scale(1.3)}@keyframes pop{from{transform:scale(.6)}to{transform:scale(1)}}.smallprint{text-align:center;color:var(--muted);font:10px 'DM Mono';padding:35px 0 20px}.modal{display:none;position:fixed;inset:0;background:#211817b8;z-index:5;place-items:center;padding:20px}.modal.show{display:grid}.modal-card{background:var(--paper);padding:28px;max-width:440px;width:100%;text-align:center;border:1px solid var(--line)}.close{float:right;background:none;border:0;font-size:22px;color:var(--wine)}@media(max-width:650px){.wrap{padding:14px}.stamp{width:58px;height:58px;font-size:8px;right:0;top:15px}.hero{padding-top:55px}.hero-art{gap:6px}.polaroid{padding:6px 6px 22px}.ph{height:95px}.polaroid:nth-child(2) .ph{height:125px}.polaroid small{font-size:10px}.music-layout{grid-template-columns:1fr}.record{width:155px}.gallery{grid-template-columns:repeat(2,1fr)}.gallery .ph{height:130px}.reason-grid{grid-template-columns:repeat(2,1fr)}.panel{padding:17px}.letter{padding:25px 20px}}
+
+/* DARK CUT-OUT ARCHIVE ART DIRECTION */
+:root{--paper:#10100f;--ink:#eee8df;--muted:#b2a59a;--red:#d76c61;--rose:#c77d87;--pink:#e7b6c0;--line:#39332f;--wine:#672d38;--card:#191817}
+body{background:#090909;color:var(--ink);background-image:radial-gradient(#ffffff0b .7px,transparent .7px);background-size:5px 5px}
+.wrap{max-width:1160px;background:#11100f;border:1px solid #292522;min-height:100vh;box-shadow:0 0 70px #000;margin:22px auto;padding:22px 28px}
+.top{border-color:#3a3430;color:#d0c3b8}.hero{padding:52px 12px 24px}.eyebrow,.kicker{color:#df897d}h1{color:#f3ece3;text-shadow:0 3px 22px #000}.sub,.intro{color:#c2b2a6}.stamp{border-color:#dc8177;color:#e69a8e}.hero-art{display:none}
+.nav{margin:20px auto 44px;gap:9px}.nav a,.pill{background:#1a1918;border-color:#51433d;color:#eee5db;border-radius:2px}
+.nav a:hover,.nav a.active,.pill:hover{background:#783b43;border-color:#d28b80;color:#fff}
+.panel,.letter{background:#1b1918;border-color:#48403a;box-shadow:0 12px 28px #0008;color:#eee8df}
+.track,.moment{border-color:#4a403a}.ph,.placeholder-photo{background:linear-gradient(135deg,#423638,#79505a 55%,#252323);color:#f6e7df}
+.action{background:#8e444b;color:#fff;border:1px solid #d28b80;padding:11px 15px;letter-spacing:.08em;font:10px 'DM Mono';cursor:pointer}
+input,.todo-add input{background:#151413!important;color:#f3eae1!important;border:1px solid #62534b!important}
+.reason{background:#211c1b!important;border-color:#624a45!important;color:#f3e9df!important}.smallprint{color:#8f8178;border-color:#3c332e}
+.sticker-scatter{position:relative;max-width:850px;height:210px;margin:0 auto 12px}
+.sticker{position:absolute;display:grid;place-items:center;text-align:center;color:#211b19;background:#eadcc8;box-shadow:2px 8px 15px #0009;border:1px solid #fff8;transform:rotate(-7deg);font-family:'Playfair Display',serif}
+.sticker small{font:7px 'DM Mono';letter-spacing:.08em;display:block}
+.s-ghost{left:3%;top:30px;width:84px;height:92px;border-radius:45% 45% 38% 38%;font-size:40px;background:#eee9e1;transform:rotate(-12deg)}
+.s-camera{left:18%;top:80px;width:105px;height:67px;border-radius:8px;background:#d78b9b;font-size:32px;transform:rotate(7deg)}
+.s-vinyl{left:35%;top:12px;width:105px;height:105px;border-radius:50%;background:repeating-radial-gradient(circle,#171616 0 3px,#38302e 4px 5px);color:#e5a4a0;font-size:40px}
+.s-cat{left:52%;top:85px;font-size:45px;background:#f0d8bb;padding:8px;transform:rotate(-8deg)}
+.s-flower{left:70%;top:12px;width:72px;height:72px;border-radius:50%;background:#d7b5bd;color:#743c4c;font-size:48px}
+.s-moon{right:1%;top:90px;background:#e9d8ad;color:#443b36;padding:15px 12px;font-size:24px;transform:rotate(9deg)}
+.s-ticket{left:10%;top:0;background:#e9d8b7;padding:8px 13px;font:9px 'DM Mono';transform:rotate(5deg);line-height:1.6}
+.s-spidey{right:18%;top:95px;background:#bd5860;color:#fff;padding:10px;font-size:25px;transform:rotate(9deg)}
+.s-band{right:29%;top:3px;background:#e9c6ca;padding:10px 14px;font:11px 'DM Mono';transform:rotate(-5deg)}
+.s-letter{left:43%;bottom:0;background:#e5b4a9;padding:9px;font:11px 'DM Mono';transform:rotate(8deg)}
+.album-tools{display:flex;justify-content:center;align-items:center;gap:18px;margin:18px auto;color:#b9aaa0;font:10px 'DM Mono';letter-spacing:.08em}
+.upload-label{background:#8e444b;color:white;padding:12px 16px;cursor:pointer;border:1px solid #d28b80}
+.album-stage{display:flex;align-items:center;justify-content:center;gap:12px;margin:25px auto;max-width:760px}
+.open-book{display:grid;grid-template-columns:1fr 1fr;width:min(100%,620px);min-height:370px;filter:drop-shadow(0 18px 22px #0009)}
+.book-page{background:#e9dfd0;color:#332b28;padding:18px 20px 22px;min-width:0;position:relative;border:1px solid #c8b7a5}
+.left-page{border-radius:5px 0 0 5px;background:linear-gradient(90deg,#d5c7b7,#eee5d8 7%,#eee5d8)}
+.right-page{border-radius:0 5px 5px 0;background:linear-gradient(270deg,#d5c7b7,#eee5d8 7%,#eee5d8)}
+.page-number{font:8px 'DM Mono';letter-spacing:.15em;text-align:center;color:#90796d;margin-bottom:13px}
+.page-photo{height:260px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#d4c3b2;border:7px solid #f8f1e8;box-shadow:0 4px 10px #4a332522;position:relative}
+.page-photo img{width:100%;height:100%;object-fit:cover}.empty-page{font:45px 'Playfair Display';color:#a05b5e;flex-direction:column;gap:12px}
+.empty-page small{font:italic 12px 'Playfair Display';color:#846d61}.page-caption{text-align:center;font:italic 15px 'Playfair Display';margin-top:12px;color:#765d53}
+.page-arrow{background:#211b1a;color:#f4e9df;border:1px solid #67514a;width:38px;height:48px;font-size:27px;cursor:pointer}
+.album-controls{display:flex;align-items:center;justify-content:center;gap:18px}.album-controls span{font:9px 'DM Mono';color:#c5b3a7;letter-spacing:.12em}
+.album-note{text-align:center;color:#9e8e84;font:italic 12px 'Playfair Display';max-width:570px;margin:20px auto}
+@media(max-width:650px){.wrap{margin:0;padding:16px 13px;border:0}.sticker-scatter{height:170px;transform:scale(.88);transform-origin:top center;margin-bottom:-5px}.s-ghost{left:0}.s-moon{right:0}.album-stage{gap:5px}.open-book{min-height:270px}.book-page{padding:12px 9px}.page-photo{height:185px}.page-arrow{width:28px}.album-controls{gap:8px}.album-controls .action{padding:9px}.album-tools{flex-direction:column;gap:8px}}
+
+
+.playlist-embed{display:block!important;margin-top:18px;background:#171615;border:1px solid #51423b}
+.playlist-embed iframe{max-width:100%;background:#111}
+.playlist-embed a{color:#e7b6c0}
+
+
+/* Navigation reliability and Our Story photobook */
+.nav a{border:1px solid #51433d;background:#1a1918;color:#eee5db;border-radius:2px;padding:10px 14px;text-decoration:none;font:11px 'DM Mono';letter-spacing:.03em;transition:.2s}
+.nav a:hover,.nav a.active{background:#783b43;border-color:#d28b80;color:#fff}
+.album-toolbar{display:flex;align-items:center;justify-content:center;gap:16px;margin:18px auto;color:#b9aaa0;font:10px 'DM Mono';letter-spacing:.08em}
+.book-wrap{display:flex;align-items:center;justify-content:center;gap:12px;margin:24px auto;max-width:850px}
+.storybook{perspective:1800px;width:min(100%,680px);filter:drop-shadow(0 18px 24px #000b)}
+.book-spread{display:grid;grid-template-columns:1fr 1fr;position:relative;min-height:430px;transform-style:preserve-3d}
+.story-page{position:relative;min-width:0;background:#e9dfd0;color:#332b28;padding:22px 22px 30px;border:1px solid #c8b7a5;overflow:hidden}
+.story-page.left{border-radius:6px 0 0 6px;background:linear-gradient(90deg,#d5c7b7,#eee5d8 8%,#eee5d8)}
+.story-page.right{border-radius:0 6px 6px 0;background:linear-gradient(270deg,#d5c7b7,#eee5d8 8%,#eee5d8)}
+.story-page:after{content:"";position:absolute;top:0;bottom:0;width:12px;pointer-events:none}
+.story-page.left:after{right:0;background:linear-gradient(90deg,#a9978430,transparent)}
+.story-page.right:after{left:0;background:linear-gradient(270deg,#a9978430,transparent)}
+.page-label{text-align:center;font:8px 'DM Mono';letter-spacing:.16em;color:#90796d;margin-bottom:18px}
+.photo-frame{height:290px;padding:9px;background:#faf4ea;box-shadow:0 5px 14px #4a332522;display:flex;align-items:center;justify-content:center;overflow:hidden;transform:rotate(-1deg)}
+.story-page.right .photo-frame{transform:rotate(1.2deg)}
+.photo-frame img{width:100%;height:100%;object-fit:cover;display:block}
+.photo-frame span{font:44px 'Playfair Display';color:#a05b5e;text-align:center}
+.photo-frame small{display:block;font:italic 12px 'Playfair Display';color:#846d61;margin-top:12px}
+.photo-caption{text-align:center;font:italic 15px 'Playfair Display';color:#765d53;margin:15px 4px 0;min-height:22px}
+.page-folio{position:absolute;bottom:10px;left:0;right:0;text-align:center;color:#a18b7d;font:9px 'DM Mono'}
+.book-arrow{background:#211b1a;color:#f4e9df;border:1px solid #67514a;width:40px;height:52px;font-size:30px;cursor:pointer;flex:none}
+.book-controls{display:flex;align-items:center;justify-content:center;gap:16px}
+.book-controls span{font:9px 'DM Mono';color:#c5b3a7;letter-spacing:.12em}
+.book-help{text-align:center;color:#9e8e84;font:italic 12px 'Playfair Display';max-width:570px;margin:20px auto}
+.page-flip{position:absolute;z-index:4;top:0;bottom:0;left:50%;width:50%;transform-origin:left center;transform-style:preserve-3d;backface-visibility:visible;pointer-events:none;background:linear-gradient(90deg,#9f8b78 0%,#d7c8b7 5%,#fbf3e7 16%,#e8ddcf 76%,#c5b39f 100%);opacity:0;box-shadow:inset 12px 0 18px #6e584633,0 4px 18px #34251e55}
+.page-flip.turn-forward{animation:flipForward .72s ease-in-out}
+.page-flip.turn-back{left:0;transform-origin:right center;animation:flipBack .72s ease-in-out}
+@keyframes flipForward{0%{opacity:1;transform:rotateY(0) skewY(0deg);filter:brightness(1)}35%{opacity:1;transform:rotateY(-68deg) skewY(-2deg);filter:brightness(.88)}72%{opacity:1;transform:rotateY(-145deg) skewY(1deg);filter:brightness(1.06)}100%{opacity:1;transform:rotateY(-180deg);filter:brightness(1)}}
+@keyframes flipBack{0%{opacity:1;transform:rotateY(0) skewY(0deg);filter:brightness(1)}35%{opacity:1;transform:rotateY(68deg) skewY(2deg);filter:brightness(.88)}72%{opacity:1;transform:rotateY(145deg) skewY(-1deg);filter:brightness(1.06)}100%{opacity:1;transform:rotateY(180deg);filter:brightness(1)}}
+@media(max-width:650px){.nav{gap:6px;margin-bottom:30px}.nav a{padding:9px 10px;font-size:9px}.album-toolbar{flex-direction:column;gap:8px}.book-wrap{gap:5px}.book-spread{min-height:300px}.story-page{padding:12px 9px 24px}.page-label{font-size:6px;letter-spacing:.08em;margin-bottom:12px}.photo-frame{height:205px;padding:6px}.photo-frame span{font-size:32px}.photo-caption{font-size:12px}.book-arrow{width:28px;height:44px}.book-controls{gap:7px}.book-controls .action{padding:9px 10px;font-size:9px}.book-controls span{font-size:7px}}
+
+
+/* Shared scrapbook editor */
+.book-edit{max-width:760px;margin:22px auto;background:#191817;border-color:#574840}
+.auth-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.auth-row input{min-width:0;flex:1;padding:11px 12px;background:#111!important;border:1px solid #66544b!important;color:#f4e9df!important}
+.auth-status{font:10px 'DM Mono';letter-spacing:.04em;color:#d5aaa0;margin-top:12px}.editor-toolbar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:15px 0}
+.page-editor-list{display:grid;gap:9px;margin-top:14px}.page-editor-row{display:grid;grid-template-columns:54px 1fr auto;gap:10px;align-items:center;border-top:1px dashed #51443e;padding:10px 0}
+.page-editor-row img{width:54px;height:54px;object-fit:cover;border:3px solid #e9dfd0}.page-editor-row input{width:100%;min-width:0;padding:10px;background:#111!important;color:#f4e9df!important;border:1px solid #5b4a42!important}
+.page-editor-actions{display:flex;gap:5px;flex-wrap:wrap}.page-editor-actions button{background:#211c1a;border:1px solid #6a5148;color:#f4e9df;padding:8px 10px;font:10px 'DM Mono'}
+.page-editor-actions button:disabled{opacity:.35;cursor:not-allowed}.book-edit [hidden]{display:none!important}.book-arrow:disabled,.book-controls button:disabled{opacity:.35;cursor:not-allowed}
+@media(max-width:650px){.auth-row{display:grid;grid-template-columns:1fr}.page-editor-row{grid-template-columns:44px 1fr}.page-editor-row img{width:44px;height:44px}.page-editor-actions{grid-column:2}.editor-toolbar{align-items:flex-start}.editor-toolbar .action{margin-left:auto}}
+</style></head>
+<body><div class="wrap"><div class="top"><span>VOL. 01 · A COLLECTION OF US</span><span>EST. <span id="year">2026</span> &nbsp; ♡</span></div>
+<header class="hero"><div class="stamp">MADE<br>WITH<br>LOVE ♡</div><div class="eyebrow">A LITTLE CORNER OF THE INTERNET</div><h1>Our Little <em>Universe</em></h1><div class="sub">a collection of everything that makes us, us.</div><div class="hero-art"><div class="polaroid"><div class="ph">✦</div><small>the little moments</small></div><div class="polaroid"><div class="ph">♡</div><small>you + me, always</small></div><div class="polaroid"><div class="ph">✧</div><small>my favourite plot</small></div></div><div class="sub">Welcome home, baby. Pick a little something to explore.</div></header>
+<nav class="nav" id="siteNav" aria-label="Sections">
+<a class="active" href="#soundtrack" data-target="soundtrack">♫ Soundtrack</a>
+<a href="#story" data-target="story">Our story</a>
+<a href="#arcade" data-target="arcade">The arcade</a>
+<a href="#gallery" data-target="gallery">Photo booth</a>
+<a href="#list" data-target="list">The bucket list</a>
+<a href="#letter" data-target="letter">A letter</a>
+<a href="#reasons" data-target="reasons">Little things</a>
+<a href="#movie" data-target="movie">Our movie</a>
+</nav>
+<main>
+<section id="soundtrack" class="section active"><div class="section-head"><div class="kicker">SIDE A · THE SOUNDTRACK OF US</div><h2>Some songs feel like you.</h2><div class="intro">Press play, let the memories do their thing.</div></div><div class="panel music-layout"><div class="record" id="record"><div class="label">♡</div></div><div><div class="kicker">NOW PLAYING · YOUR LITTLE MIXTAPE</div><h3 style="font:italic 27px 'Playfair Display';margin:8px 0">Songs that sound like us</h3><p class="intro">Add your Spotify playlist link below, then use the player to listen together.</p><div class="track"><span>01 &nbsp; Our song goes here</span><small>YOUR ARTIST</small></div><div class="track"><span>02 &nbsp; That one on repeat</span><small>YOUR ARTIST</small></div><div class="track"><span>03 &nbsp; The drive home song</span><small>YOUR ARTIST</small></div><a class="action" href="https://open.spotify.com/playlist/5jOiHzWMlXqDa3WYYISsIh" target="_blank" rel="noopener" style="display:inline-block;text-decoration:none">OPEN IN SPOTIFY ↗</a></div></div><div id="playlistEmbed" class="panel playlist-embed">
+  <div class="kicker">NOW PLAYING · OUR SHARED PLAYLIST</div>
+  <h3 style="font:italic 25px 'Playfair Display';margin:8px 0 14px">Press play, baby ♡</h3>
+  <iframe title="Our Spotify playlist" style="border-radius:12px;display:block" src="https://open.spotify.com/embed/playlist/5jOiHzWMlXqDa3WYYISsIh?utm_source=generator&theme=0" width="100%" height="352" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  <p class="album-note">If the player doesn't load inside your browser, <a href="https://open.spotify.com/playlist/5jOiHzWMlXqDa3WYYISsIh" target="_blank" rel="noopener">open the playlist in Spotify ↗</a>.</p>
+</div></section>
+<section id="story" class="section">
+<div class="section-head"><div class="kicker">VOLUME I · THE STORY SO FAR</div><h2>Our story, on paper.</h2><div class="intro">Every page is a moment I want to keep.</div></div>
+<div class="album-toolbar"><span id="storyPhotoCount">0 photos in our book</span></div>
+<div class="book-wrap">
+<button class="book-arrow" id="bookPrev" type="button" aria-label="Previous pages">‹</button>
+<div class="storybook" id="storyBook">
+<div class="book-spread" id="bookSpread">
+<div class="story-page left">
+<div class="page-label">OUR LITTLE UNIVERSE · VOL. 01</div>
+<div class="photo-frame" id="storyPhotoLeft"><span>✿<small>the little moments</small></span></div>
+<div class="photo-caption" id="storyCaptionLeft">the beginning of our favourite story</div>
+<div class="page-folio" id="storyFolioLeft">01</div>
+</div>
+<div class="story-page right">
+<div class="page-label">A COLLECTION OF US</div>
+<div class="photo-frame" id="storyPhotoRight"><span>♡<small>add your memories</small></span></div>
+<div class="photo-caption" id="storyCaptionRight">more pages, more memories</div>
+<div class="page-folio" id="storyFolioRight">02</div>
+</div>
+<div class="page-flip" id="pageFlip" aria-hidden="true"></div>
+</div>
+</div>
+<button class="book-arrow" id="bookNext" type="button" aria-label="Next pages">›</button>
+</div>
+<div class="book-controls"><button class="action secondary" id="bookBack" type="button">← PREVIOUS</button><span id="bookPageLabel">COVER · 00 / 00</span><button class="action" id="bookForward" type="button">NEXT PAGES →</button></div>
+<div class="book-edit panel" id="bookEdit"><div class="kicker">MAKE THIS BOOK OURS</div><p class="intro">Sign in to add photos, write captions and arrange the pages together.</p>
+<div class="auth-row" id="authRow"><input id="authEmail" type="email" autocomplete="username" placeholder="Your email"><input id="authPassword" type="password" autocomplete="current-password" placeholder="Password"><button class="action" id="signInButton" type="button">SIGN IN ♡</button></div>
+<div class="auth-status" id="authStatus" role="status">The shared photobook is locked until one of you signs in.</div>
+<div id="editorControls" hidden><div class="editor-toolbar"><label class="upload-label">＋ ADD PHOTOS <input id="sharedUpload" type="file" accept="image/jpeg,image/png,image/webp" multiple hidden></label><span class="intro">JPEG · PNG · WebP · up to 10 MB each</span><button class="action secondary" id="signOutButton" type="button">SIGN OUT</button></div><div id="pageEditorList" class="page-editor-list"></div></div></div>
+<p class="book-help">Every photo becomes a scrapbook page. Your changes sync between both signed-in accounts.</p>
+</section>
+<section id="arcade" class="section"><div class="section-head"><div class="kicker">INSERT COIN · PLAYER 01</div><h2>The little love arcade.</h2><div class="intro">A tiny game, a tiny challenge. Go get those hearts.</div></div><div class="panel gamebox"><div class="game-score">HEARTS CAUGHT: <b id="score">0</b> &nbsp; · &nbsp; TIME: <b id="time">20</b>s</div><p>Tap as many hearts as you can before time runs out.</p><div class="arena" id="arena"><div style="padding:95px 10px;color:#946c65;font:italic 16px 'Playfair Display'" id="gameHint">Ready, player one? ♡</div></div><button class="action" id="startGame" onclick="startGame()">START GAME ♡</button><div class="intro" id="gameResult" style="margin-top:12px"></div></div></section>
+
+
+
+<section id="gallery" class="section"><div class="section-head"><div class="kicker">THE PHOTO BOOTH · ROLL NO. 001</div><h2>Little snapshots.</h2><div class="intro">The silly ones, the blurry ones, the favourite ones.</div></div><div class="panel"><div class="gallery"> <div class="ph">PHOTO 01</div><div class="ph">PHOTO 02</div><div class="ph">PHOTO 03</div><div class="ph">PHOTO 04</div><div class="ph">PHOTO 05</div><div class="ph">PHOTO 06</div></div><p class="intro" style="text-align:center;margin:20px 0 0">These are placeholders — we'll replace them with your pictures.</p></div></section>
+<section id="list" class="section"><div class="section-head"><div class="kicker">NEXT UP · OUR NEVER-ENDING LIST</div><h2>Things we'll do together.</h2><div class="intro">Some planned, some spontaneous, all with you.</div></div><div class="panel"><div class="kicker">ADD A NEW ADVENTURE</div><div class="todo-add"><input id="todoInput" placeholder="e.g. Watch our favourite movie under the stars"><button class="action" style="margin:0" onclick="addTodo()">ADD +</button></div><div id="todoList"></div><div class="intro" id="todoCount" style="margin-top:15px"></div><p class="intro" style="font-size:12px">Prototype note: this checklist saves on this device for now. We'll connect shared syncing so both of you see updates.</p></div></section>
+<section id="letter" class="section"><div class="section-head"><div class="kicker">SEALED WITH A KISS</div><h2>A little letter for my baby.</h2><div class="intro">A few words, and a whole lot of love.</div></div><div class="letter"><div class="bouquet">🌷 🌹 💐 🌷</div><p>My baby,</p><p>I wanted to make you a little corner of the internet that belongs to us. A place for our songs, our memories, our silly moments and all the things we haven't done yet.</p><p>Every little thing here is a reminder that my favourite part of the story is getting to write it with you.</p><p>Here's to all the chapters still waiting for us.</p><p>All my love,<br>your girl ♡</p><div style="text-align:center;color:var(--red);font-size:22px">✿ ❀ ✿</div></div></section>
+<section id="reasons" class="section"><div class="section-head"><div class="kicker">A HUNDRED LITTLE THINGS</div><h2>Reasons I love you.</h2><div class="intro">Pick a note. There's always another reason.</div></div><div class="reason-grid" id="reasonGrid"><button class="reason" onclick="revealReason(this,0)">open note 01 ♡</button><button class="reason" onclick="revealReason(this,1)">open note 02 ♡</button><button class="reason" onclick="revealReason(this,2)">open note 03 ♡</button><button class="reason" onclick="revealReason(this,3)">open note 04 ♡</button><button class="reason" onclick="revealReason(this,4)">open note 05 ♡</button><button class="reason" onclick="revealReason(this,5)">open note 06 ♡</button></div><p class="intro" style="text-align:center">We'll personalise these with your real reasons and inside jokes.</p></section>
+<section id="movie" class="section"><div class="section-head"><div class="kicker">A MOTION PICTURE EVENT</div><h2>If our love were a movie...</h2><div class="intro">One story. Two leads. A million favourite scenes.</div></div><div class="panel" style="text-align:center;background:linear-gradient(145deg,#6d303b,#351f28);color:#f7e9dd;padding:45px 25px"><div style="font:10px 'DM Mono';letter-spacing:.25em">A VERY SPECIAL PRESENTATION</div><div style="font:italic clamp(42px,8vw,72px)/1.1 'Playfair Display';margin:28px 0 10px">You &<br>Me, Always.</div><div style="font:11px 'DM Mono';letter-spacing:.2em;color:#e6b8ad">A LOVE STORY IN PROGRESS</div><div style="font-size:48px;margin:28px">✦ ♡ ✦</div><p style="font:italic 17px 'Playfair Display';max-width:450px;margin:0 auto">In a world full of people, two found their favourite person. And somehow, the best scenes were the ordinary ones.</p><div style="border-top:1px solid #c18b83;margin:35px auto 0;padding-top:15px;font:9px 'DM Mono';letter-spacing:.15em;max-width:420px">STARRING YOU TWO · GENRE: ROMANCE / COMEDY / US</div></div></section>
+</main><footer class="smallprint">MADE WITH LOVE, FOR MY BABY &nbsp; · &nbsp; THE END? NEVER. ♡</footer></div>
+<div class="modal" id="playlistModal"><div class="modal-card"><button class="close" onclick="closeModal('playlistModal')">×</button><h2 style="font-size:30px">Our mixtape ♡</h2><p class="intro">Paste a Spotify playlist URL. You can also add a YouTube playlist link later.</p><input id="playlistUrl" placeholder="https://open.spotify.com/playlist/..." style="width:100%;padding:12px;border:1px solid var(--line);background:#fffaf5"><button class="action" onclick="savePlaylist()">SAVE PLAYLIST</button></div></div>
+<script>
+const siteNav=document.getElementById('siteNav');
+function showSection(id, updateHash=true){
+ const target=document.getElementById(id);
+ if(!target || !target.classList.contains('section')) return;
+ document.querySelectorAll('main .section').forEach(s=>s.classList.toggle('active',s.id===id));
+ siteNav.querySelectorAll('[data-target]').forEach(a=>a.classList.toggle('active',a.dataset.target===id));
+ if(updateHash && location.hash!=='#'+id) history.replaceState(null,'','#'+id);
+}
+siteNav.addEventListener('click',e=>{
+ const link=e.target.closest('a[data-target]');
+ if(!link) return;
+ e.preventDefault();
+ showSection(link.dataset.target,true);
+ window.scrollTo({top:siteNav.offsetTop-8,behavior:'smooth'});
+});
+window.addEventListener('hashchange',()=>showSection(location.hash.slice(1)||'soundtrack',false));
+showSection(location.hash.slice(1)||'soundtrack',false);
+document.getElementById('year').textContent=new Date().getFullYear();function openModal(id){document.getElementById(id).classList.add('show')}function closeModal(id){document.getElementById(id).classList.remove('show')}
+function savePlaylist(){let url=document.getElementById('playlistUrl').value.trim();if(!/^https:\/\/(open\.spotify\.com|music\.youtube\.com|www\.youtube\.com)/.test(url)){alert('Paste a valid Spotify or YouTube music link first ♡');return}localStorage.setItem('olu-playlist',url);let box=document.getElementById('playlistEmbed');if(url.includes('spotify.com')){let id=url.split('/playlist/')[1]?.split('?')[0];box.innerHTML=id?`<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/${id}?utm_source=generator" width="100%" height="352" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`:'Playlist saved.'}else{box.innerHTML=`<a target="_blank" rel="noopener" href="${url}">Open our YouTube playlist ↗</a>`}box.style.display='block';closeModal('playlistModal')}
+let todos=JSON.parse(localStorage.getItem('olu-todos')||'[{"text":"Have a movie marathon","done":false},{"text":"Go on a spontaneous little date","done":false},{"text":"Find our new favourite dessert place","done":false}]');function renderTodos(){let el=document.getElementById('todoList');el.innerHTML='';todos.forEach((t,i)=>{let row=document.createElement('label');row.className='todo'+(t.done?' done':'');let cb=document.createElement('input');cb.type='checkbox';cb.checked=t.done;cb.addEventListener('change',()=>{todos[i].done=cb.checked;saveTodos()});let span=document.createElement('span');span.textContent=t.text;let del=document.createElement('button');del.textContent='×';del.style.cssText='margin-left:auto;border:0;background:none;color:#a63d43;font-size:20px';del.onclick=()=>{todos.splice(i,1);saveTodos()};row.append(cb,span,del);el.append(row)});document.getElementById('todoCount').textContent=`${todos.filter(t=>t.done).length} of ${todos.length} adventures completed ♡`}function saveTodos(){localStorage.setItem('olu-todos',JSON.stringify(todos));renderTodos()}function addTodo(){let input=document.getElementById('todoInput'),v=input.value.trim();if(!v)return;todos.push({text:v,done:false});input.value='';saveTodos()}document.getElementById('todoInput').addEventListener('keydown',e=>{if(e.key==='Enter')addTodo()});renderTodos();
+const reasons=['The way you make ordinary days feel special.','Your laugh. I hope I never stop hearing it.','How being with you feels like home.','All our tiny inside jokes.','The person you are, even when nobody is watching.','Because my favourite plans always include you.'];function revealReason(btn,i){btn.classList.add('reveal');btn.textContent=reasons[i];btn.onclick=null}
+let gameTimer,score=0,remaining=20;function startGame(){clearInterval(gameTimer);score=0;remaining=20;document.getElementById('score').textContent=score;document.getElementById('time').textContent=remaining;document.getElementById('gameResult').textContent='';let arena=document.getElementById('arena');arena.innerHTML='';function spawn(){if(remaining<=0)return;let h=document.createElement('button');h.className='heart';h.textContent=['♡','♥','💗'][Math.floor(Math.random()*3)];h.style.left=Math.random()*85+'%';h.style.top=Math.random()*75+'%';h.onclick=()=>{score++;document.getElementById('score').textContent=score;h.remove()};arena.append(h);setTimeout(()=>h.remove(),900)}spawn();gameTimer=setInterval(()=>{remaining--;document.getElementById('time').textContent=remaining;if(remaining<=0){clearInterval(gameTimer);arena.innerHTML='<div style="padding:90px 10px;color:#946c65;font:italic 18px Playfair Display">You caught '+score+' hearts! All of them are yours ♡</div>';document.getElementById('gameResult').textContent=score>=15?'SCORE: certified heart thief.': 'SCORE: '+score+' hearts of love.'}},1000);let spawner=setInterval(()=>{if(remaining<=0){clearInterval(spawner);return}spawn()},480)}
+let saved=localStorage.getItem('olu-playlist')||'https://open.spotify.com/playlist/5jOiHzWMlXqDa3WYYISsIh';document.getElementById('playlistUrl').value=saved;
+
+</script><script type="module" src="/src/photobook.js"></script>
+</body></html>

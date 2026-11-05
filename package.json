@@ -1,0 +1,9 @@
+{
+  "name": "our-little-universe",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {"dev": "vite", "build": "vite", "preview": "vite preview"},
+  "dependencies": {"@supabase/supabase-js": "^2.80.0"},
+  "devDependencies": {"vite": "^7.1.12"}
+}
